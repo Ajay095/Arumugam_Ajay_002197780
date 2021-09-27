@@ -48,6 +48,11 @@ public class MainJFrame extends javax.swing.JFrame {
         });
 
         btnDisplay.setText("Display");
+        btnDisplay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDisplayActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout ControlPanelLayout = new javax.swing.GroupLayout(ControlPanel);
         ControlPanel.setLayout(ControlPanelLayout);
@@ -106,7 +111,15 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         CreateJPanel createPanel = new CreateJPanel (person);
         SplitPane.setRightComponent(createPanel);
+        this.person = person;
     }//GEN-LAST:event_btnCreateActionPerformed
+
+    private void btnDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisplayActionPerformed
+        // TODO add your handling code here:
+        DisplayJPanel displayPanel = new DisplayJPanel(person);
+        SplitPane.setRightComponent(displayPanel);
+        this.person = person;
+    }//GEN-LAST:event_btnDisplayActionPerformed
 
     /**
      * @param args the command line arguments

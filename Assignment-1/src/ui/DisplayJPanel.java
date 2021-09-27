@@ -20,7 +20,7 @@ public class DisplayJPanel extends javax.swing.JPanel {
     public DisplayJPanel(Person person) {
         initComponents();
         this.person = person;
-        displayProduct();
+        displayPerson();
     }
 
     /**
@@ -33,62 +33,59 @@ public class DisplayJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane14 = new javax.swing.JScrollPane();
-        jTextPane14 = new javax.swing.JTextPane();
+        txtVehicleIdentifiers = new javax.swing.JTextPane();
         lblTitle = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
+        txtTelephoneNumber = new javax.swing.JTextPane();
         lblName = new javax.swing.JLabel();
         lblGeographicData = new javax.swing.JLabel();
         lblDOB = new javax.swing.JLabel();
         lblDeviceIdentifiers = new javax.swing.JLabel();
         jScrollPane15 = new javax.swing.JScrollPane();
-        jTextPane15 = new javax.swing.JTextPane();
+        txtDeviceIdentifiers = new javax.swing.JTextPane();
         lblTelephoneNumber = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
-        jTextPane7 = new javax.swing.JTextPane();
+        txtFaxNumber = new javax.swing.JTextPane();
         lblLinkedIn = new javax.swing.JLabel();
         lblFaxNumber = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
-        jTextPane16 = new javax.swing.JTextPane();
+        txtLinkedIn = new javax.swing.JTextPane();
         lblEmailAddress = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
-        jTextPane8 = new javax.swing.JTextPane();
+        txtEmail = new javax.swing.JTextPane();
         lblSSN = new javax.swing.JLabel();
         lblIPA = new javax.swing.JLabel();
         lblMRN = new javax.swing.JLabel();
         jScrollPane9 = new javax.swing.JScrollPane();
-        jTextPane9 = new javax.swing.JTextPane();
+        txtSSN = new javax.swing.JTextPane();
         jScrollPane17 = new javax.swing.JScrollPane();
-        jTextPane17 = new javax.swing.JTextPane();
+        txtIP = new javax.swing.JTextPane();
         HealthPlanNum = new javax.swing.JLabel();
         lblBankAccntNum = new javax.swing.JLabel();
         jScrollPane10 = new javax.swing.JScrollPane();
-        jTextPane10 = new javax.swing.JTextPane();
-        lblIDNum = new javax.swing.JLabel();
-        jScrollPane18 = new javax.swing.JScrollPane();
-        jTextPane18 = new javax.swing.JTextPane();
+        txtMRN = new javax.swing.JTextPane();
         jScrollPane11 = new javax.swing.JScrollPane();
-        jTextPane11 = new javax.swing.JTextPane();
+        txtHPBN = new javax.swing.JTextPane();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        txtName = new javax.swing.JTextPane();
         jScrollPane12 = new javax.swing.JScrollPane();
-        jTextPane12 = new javax.swing.JTextPane();
+        txtAccntNum = new javax.swing.JTextPane();
         lblLicenseNumber = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        txtGeographicData = new javax.swing.JTextPane();
         jScrollPane13 = new javax.swing.JScrollPane();
-        jTextPane13 = new javax.swing.JTextPane();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        txtLicenseNumber = new javax.swing.JTextPane();
         lblVehicleIdentifiers = new javax.swing.JLabel();
+        DateDOB = new com.toedter.calendar.JDateChooser();
+        lblPic = new javax.swing.JLabel();
 
-        jScrollPane14.setViewportView(jTextPane14);
+        jScrollPane14.setViewportView(txtVehicleIdentifiers);
 
         lblTitle.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Display a Person Profile");
 
-        jScrollPane5.setViewportView(jTextPane5);
+        jScrollPane5.setViewportView(txtTelephoneNumber);
 
         lblName.setText("Name:");
 
@@ -98,21 +95,21 @@ public class DisplayJPanel extends javax.swing.JPanel {
 
         lblDeviceIdentifiers.setText("Device Identifiers:");
 
-        jScrollPane15.setViewportView(jTextPane15);
+        jScrollPane15.setViewportView(txtDeviceIdentifiers);
 
         lblTelephoneNumber.setText("Telephone Number:");
 
-        jScrollPane7.setViewportView(jTextPane7);
+        jScrollPane7.setViewportView(txtFaxNumber);
 
         lblLinkedIn.setText("LinkedIn:");
 
         lblFaxNumber.setText("Fax Number:");
 
-        jScrollPane16.setViewportView(jTextPane16);
+        jScrollPane16.setViewportView(txtLinkedIn);
 
         lblEmailAddress.setText("Email Address:");
 
-        jScrollPane8.setViewportView(jTextPane8);
+        jScrollPane8.setViewportView(txtEmail);
 
         lblSSN.setText("Social Secuity Number:");
 
@@ -120,33 +117,27 @@ public class DisplayJPanel extends javax.swing.JPanel {
 
         lblMRN.setText("Medical Record Number:");
 
-        jScrollPane9.setViewportView(jTextPane9);
+        jScrollPane9.setViewportView(txtSSN);
 
-        jScrollPane17.setViewportView(jTextPane17);
+        jScrollPane17.setViewportView(txtIP);
 
         HealthPlanNum.setText("Health Plan Beneficiary Number:");
 
         lblBankAccntNum.setText("Bank Account Number:");
 
-        jScrollPane10.setViewportView(jTextPane10);
+        jScrollPane10.setViewportView(txtMRN);
 
-        lblIDNum.setText("Identification Number:");
+        jScrollPane11.setViewportView(txtHPBN);
 
-        jScrollPane18.setViewportView(jTextPane18);
+        jScrollPane1.setViewportView(txtName);
 
-        jScrollPane11.setViewportView(jTextPane11);
-
-        jScrollPane1.setViewportView(jTextPane1);
-
-        jScrollPane12.setViewportView(jTextPane12);
+        jScrollPane12.setViewportView(txtAccntNum);
 
         lblLicenseNumber.setText("License Number:");
 
-        jScrollPane2.setViewportView(jTextPane2);
+        jScrollPane2.setViewportView(txtGeographicData);
 
-        jScrollPane13.setViewportView(jTextPane13);
-
-        jScrollPane3.setViewportView(jTextPane3);
+        jScrollPane13.setViewportView(txtLicenseNumber);
 
         lblVehicleIdentifiers.setText("Vehicle Identifiers:");
 
@@ -158,6 +149,10 @@ public class DisplayJPanel extends javax.swing.JPanel {
                 .addGap(205, 205, 205)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(109, 109, 109)
+                        .addComponent(lblEmailAddress)
+                        .addContainerGap(425, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(lblLinkedIn)
@@ -165,38 +160,34 @@ public class DisplayJPanel extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(lblIPA)
                                 .addGap(132, 132, 132))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(lblIDNum)
-                                    .addGap(109, 109, 109))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(89, 89, 89)
-                                            .addComponent(lblGeographicData))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(154, 154, 154)
-                                            .addComponent(lblName))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(110, 110, 110)
-                                            .addComponent(lblDOB))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(78, 78, 78)
-                                            .addComponent(lblTelephoneNumber))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(124, 124, 124)
-                                            .addComponent(lblFaxNumber))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(55, 55, 55)
-                                            .addComponent(lblSSN))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(46, 46, 46)
-                                            .addComponent(lblMRN))
-                                        .addComponent(HealthPlanNum)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(63, 63, 63)
-                                            .addComponent(lblBankAccntNum)))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(89, 89, 89)
+                                        .addComponent(lblGeographicData))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(154, 154, 154)
+                                        .addComponent(lblName))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(110, 110, 110)
+                                        .addComponent(lblDOB))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(78, 78, 78)
+                                        .addComponent(lblTelephoneNumber))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(124, 124, 124)
+                                        .addComponent(lblFaxNumber))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(55, 55, 55)
+                                        .addComponent(lblSSN))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(46, 46, 46)
+                                        .addComponent(lblMRN))
+                                    .addComponent(HealthPlanNum)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(63, 63, 63)
+                                        .addComponent(lblBankAccntNum)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(lblVehicleIdentifiers)
@@ -205,41 +196,39 @@ public class DisplayJPanel extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(lblLicenseNumber)
                                 .addGap(70, 70, 70)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(lblEmailAddress)))
-                .addContainerGap(225, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane12, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane15, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane16, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(jScrollPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                            .addComponent(DateDOB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblPic, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {HealthPlanNum, lblBankAccntNum, lblDOB, lblDeviceIdentifiers, lblEmailAddress, lblFaxNumber, lblGeographicData, lblIDNum, lblIPA, lblLicenseNumber, lblLinkedIn, lblMRN, lblName, lblSSN, lblTelephoneNumber, lblVehicleIdentifiers});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {HealthPlanNum, lblBankAccntNum, lblDOB, lblDeviceIdentifiers, lblEmailAddress, lblFaxNumber, lblGeographicData, lblIPA, lblLicenseNumber, lblLinkedIn, lblMRN, lblName, lblSSN, lblTelephoneNumber, lblVehicleIdentifiers});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(lblTitle)
-                .addGap(36, 36, 36)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -256,13 +245,16 @@ public class DisplayJPanel extends javax.swing.JPanel {
                                                         .addGap(18, 18, 18)
                                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                             .addComponent(lblGeographicData)
-                                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(lblDOB))
-                                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                    .addComponent(lblPic, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)
+                                                .addComponent(lblDOB)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(lblTelephoneNumber))
-                                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(DateDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(lblFaxNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -305,19 +297,16 @@ public class DisplayJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblIPA))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblIDNum, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {HealthPlanNum, jScrollPane1, jScrollPane10, jScrollPane11, jScrollPane12, jScrollPane13, jScrollPane14, jScrollPane15, jScrollPane16, jScrollPane17, jScrollPane18, jScrollPane2, jScrollPane3, jScrollPane5, jScrollPane7, jScrollPane8, jScrollPane9, lblBankAccntNum, lblDOB, lblDeviceIdentifiers, lblEmailAddress, lblFaxNumber, lblGeographicData, lblIDNum, lblIPA, lblLicenseNumber, lblLinkedIn, lblMRN, lblName, lblSSN, lblTelephoneNumber, lblVehicleIdentifiers});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {HealthPlanNum, jScrollPane1, jScrollPane10, jScrollPane11, jScrollPane12, jScrollPane13, jScrollPane14, jScrollPane15, jScrollPane16, jScrollPane17, jScrollPane2, jScrollPane5, jScrollPane7, jScrollPane8, jScrollPane9, lblBankAccntNum, lblDOB, lblDeviceIdentifiers, lblEmailAddress, lblFaxNumber, lblGeographicData, lblIPA, lblLicenseNumber, lblLinkedIn, lblMRN, lblName, lblSSN, lblTelephoneNumber, lblVehicleIdentifiers});
 
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser DateDOB;
     private javax.swing.JLabel HealthPlanNum;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
@@ -328,48 +317,60 @@ public class DisplayJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
-    private javax.swing.JScrollPane jScrollPane18;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane10;
-    private javax.swing.JTextPane jTextPane11;
-    private javax.swing.JTextPane jTextPane12;
-    private javax.swing.JTextPane jTextPane13;
-    private javax.swing.JTextPane jTextPane14;
-    private javax.swing.JTextPane jTextPane15;
-    private javax.swing.JTextPane jTextPane16;
-    private javax.swing.JTextPane jTextPane17;
-    private javax.swing.JTextPane jTextPane18;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane5;
-    private javax.swing.JTextPane jTextPane7;
-    private javax.swing.JTextPane jTextPane8;
-    private javax.swing.JTextPane jTextPane9;
     private javax.swing.JLabel lblBankAccntNum;
     private javax.swing.JLabel lblDOB;
     private javax.swing.JLabel lblDeviceIdentifiers;
     private javax.swing.JLabel lblEmailAddress;
     private javax.swing.JLabel lblFaxNumber;
     private javax.swing.JLabel lblGeographicData;
-    private javax.swing.JLabel lblIDNum;
     private javax.swing.JLabel lblIPA;
     private javax.swing.JLabel lblLicenseNumber;
     private javax.swing.JLabel lblLinkedIn;
     private javax.swing.JLabel lblMRN;
     private javax.swing.JLabel lblName;
+    private javax.swing.JLabel lblPic;
     private javax.swing.JLabel lblSSN;
     private javax.swing.JLabel lblTelephoneNumber;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblVehicleIdentifiers;
+    private javax.swing.JTextPane txtAccntNum;
+    private javax.swing.JTextPane txtDeviceIdentifiers;
+    private javax.swing.JTextPane txtEmail;
+    private javax.swing.JTextPane txtFaxNumber;
+    private javax.swing.JTextPane txtGeographicData;
+    private javax.swing.JTextPane txtHPBN;
+    private javax.swing.JTextPane txtIP;
+    private javax.swing.JTextPane txtLicenseNumber;
+    private javax.swing.JTextPane txtLinkedIn;
+    private javax.swing.JTextPane txtMRN;
+    private javax.swing.JTextPane txtName;
+    private javax.swing.JTextPane txtSSN;
+    private javax.swing.JTextPane txtTelephoneNumber;
+    private javax.swing.JTextPane txtVehicleIdentifiers;
     // End of variables declaration//GEN-END:variables
 
-    private void displayProduct() {
+    private void displayPerson() {
+        txtName.setText(person.getName());
+        txtGeographicData.setText(person.getGeographicData());
+        DateDOB.setDate(person.getDateOfBirth());
+        txtTelephoneNumber.setText(Long.toString(person.getTelephoneNumber()));
+        txtFaxNumber.setText(Long.toString(person.getFaxNumber()));
+        txtEmail.setText(person.getEmailAddress());
+        txtSSN.setText(person.getSSN());
+        txtMRN.setText(Long.toString(person.getMedicalRecordNumber()));
+        txtHPBN.setText(person.getHealthPlanBeneficiaryNumber());
+        txtAccntNum.setText(Long.toString(person.getBankAccountNumbers()));
+        txtLicenseNumber.setText(person.getLicenseNumber());
+        txtVehicleIdentifiers.setText(person.getVehicleIdentifiers());
+        txtDeviceIdentifiers.setText(person.getDeviceIdentifiers());
+        txtLinkedIn.setText(person.getLinkedIn());
+        txtIP.setText(person.getIP());
         
+        lblPic.setIcon(person.getPic());
     }
 }

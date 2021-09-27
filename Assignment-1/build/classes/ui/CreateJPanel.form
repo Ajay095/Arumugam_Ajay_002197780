@@ -41,7 +41,12 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnImage" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPic" min="-2" pref="92" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
@@ -97,7 +102,6 @@
                                   <Component id="lblVehicleIdentifiers" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblLinkedIn" alignment="1" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblIPA" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblIDNum" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
                           </Group>
@@ -117,118 +121,126 @@
                           <Component id="jScrollPane15" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                           <Component id="jScrollPane16" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                           <Component id="jScrollPane17" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                          <Component id="jScrollPane18" min="-2" pref="149" max="-2" attributes="0"/>
                           <Component id="btnSave" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="DateDOB" min="-2" pref="149" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="352" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="lblTitle" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblTitle" pref="980" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="lblPic" min="-2" pref="82" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnImage" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="699" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jScrollPane1" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblName" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="lblGeographicData" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane2" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="lblDOB" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="jScrollPane1" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblName" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="lblGeographicData" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jScrollPane2" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="lblDOB" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="94" pref="94" max="-2" attributes="0"/>
+                                                      <Component id="DateDOB" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lblTelephoneNumber" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jScrollPane5" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="lblFaxNumber" linkSize="1" min="-2" pref="30" max="-2" attributes="0"/>
                                           </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="DateDOB" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="lblTelephoneNumber" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane5" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane7" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="lblFaxNumber" linkSize="1" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="lblEmailAddress" linkSize="1" min="-2" pref="26" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jScrollPane7" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane8" linkSize="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="lblEmailAddress" linkSize="1" min="-2" pref="26" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jScrollPane8" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblSSN" linkSize="1" alignment="1" min="-2" pref="29" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane9" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblSSN" linkSize="1" alignment="1" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane9" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblMRN" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jScrollPane10" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblMRN" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="HealthPlanNum" linkSize="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane10" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane11" linkSize="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="HealthPlanNum" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblBankAccntNum" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane12" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblLicenseNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane13" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblVehicleIdentifiers" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane14" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblDeviceIdentifiers" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane15" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblLinkedIn" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane16" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane17" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblIPA" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnSave" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jScrollPane11" linkSize="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblBankAccntNum" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane12" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="lblLicenseNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane13" linkSize="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblVehicleIdentifiers" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane14" linkSize="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblDeviceIdentifiers" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane15" linkSize="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblLinkedIn" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane16" linkSize="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane17" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblIPA" linkSize="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblIDNum" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane18" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="30" max="32767" attributes="0"/>
-              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -472,22 +484,6 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="lblIDNum">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Identification Number:"/>
-      </Properties>
-    </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane18">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="txtID">
-        </Component>
-      </SubComponents>
-    </Container>
     <Component class="javax.swing.JButton" name="btnSave">
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
@@ -497,6 +493,16 @@
       </Events>
     </Component>
     <Component class="com.toedter.calendar.JDateChooser" name="DateDOB">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnImage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Image"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnImageActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPic">
     </Component>
   </SubComponents>
 </Form>
